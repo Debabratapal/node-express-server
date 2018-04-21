@@ -50,6 +50,12 @@ app.get('/about', (req, res) => {
     pageTitle: 'About Page',
     //currentYear: new Date().getFullYear()
   });
+});
+
+app.get('/projects', (req, res) => {
+  res.render('projects', {
+    pageTitle: 'Projects'
+  })
 })
 
 app.listen(port, () => {
